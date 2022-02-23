@@ -1,5 +1,13 @@
 require 'sinatra'
 
 get '/' do
-  'Hello, world! This is a simple deployment. Let us check deployment changes.'
+  erb :index
+end
+
+get '/about' do
+  erb :about
+end
+
+get '/palindrome' do
+  erb :palindrome
 end
